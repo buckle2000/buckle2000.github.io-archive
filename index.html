@@ -1,1 +1,22 @@
-:) 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>buckle2000的网站</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+:)
+
+生活就像海洋，不会游泳的人就会被水淹没。
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
