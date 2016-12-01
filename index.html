@@ -2,14 +2,23 @@
 title: buckle2000的网站
 ---
 
-:)
-
 生活就像海洋，不会游泳的人就会被水淹没。
 
-<ul>
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <article class="post">
+
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ post.url }}" class="read-more">Read More</a>
+    </article>
   {% endfor %}
-</ul>
+</div>
+
+<div class="links">
+	<a href="" download="people.txt">下载这个</a>
+</div>
