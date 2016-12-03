@@ -1,24 +1,41 @@
 ---
-title: buckle2000的网站
+title: 大杂烩
 ---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-生活就像海洋，不会游泳的人就会被水淹没。
+<body>
+  <div class="nav">
+    <ul>
+      <li>Index</li>
+      <li>Games</li>
+      <li>Music</li>
+      <li>About</li>
+    </ul>
+  </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <div>
+    <h1>生活就像海洋，不会游泳的人就会被水淹没。</h1>
+  </div>
 
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-      <a href="{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
 
-<div class="links">
-	<a href="" download="people.txt">下载这个</a>
-</div>
+        <a href="{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="links">
+  	<a href="people.txt" download="people.txt">下载这个</a>
+  </div>
+</body>
+</html>
