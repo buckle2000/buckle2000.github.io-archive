@@ -1,11 +1,7 @@
 ---
-title: 垃圾堆
-description: 灵感填埋场
+title: 帖子
+description: 教你们一些人生的经验
 ---
-<div>
-	<h1>生活就像海洋，不会游泳的人就会被水淹没。</h1>
-</div>
-
 <div>
 	<h2>帖子们</h2>
 	{% for post in site.posts %}
@@ -17,8 +13,4 @@ description: 灵感填埋场
 			<a href="{{ post.url }}" class="read-more">Read More</a>
 		</article>
 	{% endfor %}
-</div>
-
-<div>
-	<a href="people.txt" download="people.txt">下载这个</a>
 </div>

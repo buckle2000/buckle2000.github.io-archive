@@ -1,0 +1,61 @@
+---
+
+---
+
+@import "reset";
+
+/* post digests on frontpage */
+.post-digest {
+	margin: 32px 0px;
+	> h1, > h1 * {
+		color: darkblue;
+	}
+	> section * {
+		color: blue;
+		margin-bottom: 0px;
+	}
+	> a {
+		color: DodgerBlue;
+	}
+}
+
+/* navigation */
+nav {
+	* {
+		padding: 0;
+		margin: 0;
+		color: white;
+		background-color: #333;
+	}
+	> ul {
+		width: 100%;
+		list-style-type: none;
+		overflow: hidden;
+		> li {
+			height: 50px;
+			float: left;
+		}
+		a, p {
+			display: block;
+			box-sizing: border-box;
+			height: 100%;
+			padding: 0 16px;
+			text-align: center;
+			text-decoration: none;
+			line-height: 50px;
+		}
+		a:hover {
+			background-color: #111;	
+		}
+		img {
+			box-sizing: border-box;
+			width: auto;
+			height: 100%;
+			padding: 4px;
+		}
+	}
+	/* floating */
+	.float-right {
+		float: right;
+	}
+}

@@ -1,13 +1,29 @@
 <head>
+<!-- meta -->
 	<meta charset="UTF-8">
+	<meta name="description" content="{{ page.description }}">
+	<meta name="author" content="{{ page.author }}">
+	<meta name="generator" content="Jekyll">
 	<meta property="og:title" content="{{ page.title }}">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="{{ page.permalink | absolute_url }}">
-	<meta property="og:image" content="{{site.url}}{{site.baseurl}}{% link /static/img/site_icon.png %}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:image" content="{{ "/static/img/site_icon.png" | absolute_url }}">
+	<meta property="og:description" content="{{ page.description }}">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="/static/css/bootstrap_theme.css">  -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- css -->
+	<link rel="stylesheet" href="/css/main.css">
 
+<!-- js -->
+	<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/d3js/3.5.17/d3.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/pixi.js/4.2.3/pixi.min.js"></script> -->
+<!-- createjs bundle
+ 	<script src="https://cdn.jsdelivr.net/preloadjs/0.3.1/preloadjs.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/soundjs/0.4.1/soundjs.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/tweenjs/0.4.1/tweenjs.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/easeljs/0.7.1/easeljs.min.js"></script>
+ -->
+
+<!-- info -->
 	<title>{{ page.title }}</title>
 </head>

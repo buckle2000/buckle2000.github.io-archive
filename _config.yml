@@ -1,18 +1,4 @@
-# Plugins
-# whitelist: []
-# gems:      []
-
-# Outputting
-permalink: /:path/:name
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "articles"
-    values:
-      layout: post #TODO
-
+# Where things are
 collections:
   posts:
     output:   true
@@ -20,7 +6,31 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Plugins
+# whitelist: []
+# gems:      []
+
+
+# Outputting
+permalink: /:path/:name
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: post #TODO
+
 # Exclude these files from your production _site
 exclude:
   - ".gitignore"
   - "README.md"
+
+sass:
+    sass_dir: _sass
+    style: compressed
