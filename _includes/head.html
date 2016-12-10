@@ -4,11 +4,15 @@
 	<meta name="description" content="{{ page.description }}">
 	<meta name="author" content="{{ page.author }}">
 	<meta name="generator" content="Jekyll">
-	<meta property="og:title" content="{{ page.title }}">
+
+	<!-- social -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ page.url | absolute_url }}">
-	<meta property="og:image" content="{{ "/img/site_icon.png" | absolute_url }}">
+	<meta property="og:title" content="{{ page.title }}">
 	<meta property="og:description" content="{{ page.description }}">
+	<meta property="og:image" content="{{ "/img/site_icon.png" | absolute_url }}">
+	<link rel="image_src" href="{{ "/img/site_icon.png" | absolute_url }}">
+	<meta property="og:site_name" content="{{ site.name }}">
 
 <!-- css -->
 	<link rel="stylesheet" href="/css/main.css">
@@ -18,7 +22,7 @@
 	<script src="https://cdn.jsdelivr.net/d3js/3.5.17/d3.min.js"></script>
 	<!-- <script src="https://cdn.jsdelivr.net/pixi.js/4.2.3/pixi.min.js"></script> -->
 <!-- createjs bundle
- 	<script src="https://cdn.jsdelivr.net/preloadjs/0.3.1/preloadjs.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/preloadjs/0.3.1/preloadjs.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/soundjs/0.4.1/soundjs.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/tweenjs/0.4.1/tweenjs.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/easeljs/0.7.1/easeljs.min.js"></script>
