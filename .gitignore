@@ -5,3 +5,4 @@ Gemfile.lock
 node_modules
 package.json
 *.sublime-*
+_serve.bat
