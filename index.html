@@ -2,23 +2,30 @@
 title: 垃圾堆
 description: 灵感填埋场
 ---
-<div>
-	<h1>生活就像海洋，不会游泳的人就会被水淹没。</h1>
-</div>
 
-<div>
-	<h2>帖子们</h2>
-	{% for post in site.posts %}
-		<article class="post-digest">
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<section>
-				{{ post.excerpt }}
-			</section>
-			<a href="{{ post.url }}" class="read-more">Read More</a>
-		</article>
-	{% endfor %}
+<!--[if lt IE 9 ]>
+<div class="ink-alert basic" role="alert">
+    <button class="ink-dismiss">&times;</button>
+    <p>
+        <strong>You are using an outdated Internet Explorer version.</strong>
+        Please <a href="http://browsehappy.com/">upgrade to a modern  browser</a> to improve your web experience.
+    </p>
 </div>
+<![endif]-->
 
-<div>
-	<a href="people.txt" download="people.txt">下载这个</a>
-</div>
+<section class="column-group gutters article">
+    <div class="xlarge-70 large-70 medium-60 small-100 tiny-100">
+        <h1>生活就像海洋，只有会划水的人才能到达彼岸。</h1>
+        <p>还没想好写啥。</p>
+    </div>
+    <section class="xlarge-30 large-30 medium-40 small-100 tiny-100">
+        {% for post in site.posts %}
+        <article class="post-digest">
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>
+                {{ post.excerpt }}
+            </p>
+        </article>
+        {% endfor %}
+    </section>
+</section>

@@ -4,6 +4,9 @@
 
 @import "reset";
 
+$header-height: 2.7rem;
+$footer-height: 5rem;
+
 /* post digests on frontpage */
 .post-digest {
 	margin: 32px 0px;
@@ -19,43 +22,51 @@
 	}
 }
 
-/* navigation */
-nav {
+body {
+	background: #ededed;
+}
+
+#logo-name {
+	border-right: 2.5px solid #505050;
+}
+
+.wrap {
+	min-height: 100% ;
+	height: auto !important;
+	margin: 0 auto -$footer-height;
+	overflow: auto;
+}
+
+.push, footer {
+		height: $footer-height;
+		margin-top: 0;
+}
+
+footer {
+	background: #ccc;
 	* {
-		padding: 0;
-		margin: 0;
-		color: white;
-		background-color: #333;
-	}
-	> ul {
-		width: 100%;
-		list-style-type: none;
-		overflow: hidden;
-		> li {
-			height: 50px;
-			float: left;
-		}
-		a, p {
-			display: block;
-			box-sizing: border-box;
-			height: 100%;
-			padding: 0 16px;
-			text-align: center;
-			text-decoration: none;
-			line-height: 50px;
-		}
-		a:hover {
-			background-color: #111;	
-		}
-		img {
-			box-sizing: border-box;
-			width: auto;
-			height: 100%;
-			padding: 4px;
-		}
-	}
-	/* floating */
-	.float-right {
-		float: right;
+			line-height: inherit;
 	}
 }
+
+nav {
+	h1 {
+		display: inline;
+		vertical-align: middle;
+	}
+	ul {
+		vertical-align: middle;
+	}
+	// span.like-a {
+	// 	padding: 0.5em 1em;
+	// 	display: block;
+	// 	line-height: 1.7;
+	// }
+	#logo {
+		width: $header-height;
+		height: $header-height;
+		background-image: url("/img/avatar.svg");
+		background-size: 100% 100%;
+		background-color: black;
+	}
+}	

@@ -8,6 +8,12 @@ description: N/A
 {% include head.html %}
 <body>
 {% include header.html %}
-{{ content }}
+  <div class="wrap">
+    <div class="ink-grid vertical-padding">
+  {{ content }}
+    </div>
+  <div class="push"></div>
+  </div>
+{% include footer.html %}
 </body>
 </html>
