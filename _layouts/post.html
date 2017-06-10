@@ -1,17 +1,35 @@
----
-title: Untitled
-author: buckle2000
-description: A post
----
 <!DOCTYPE html>
-<html>
+<html lang="zh">
+<head>
 {% include head.html %}
+</head>
 <body>
 {% include header.html %}
-
-This is a post
-<hr>
-{{ content }}
-
+<!--<link rel="stylesheet" href="/css/post.css">-->
+<article>
+  <div class="row">
+    <div class="column">
+      <header>
+        <h1>{{page.title}}</h1>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-8 column">
+{{content}}
+    </div>
+    <div class="medium-4 column align-right color-grey">
+      <footer>
+        {% if page.ps %}
+        <p>{{page.ps}}</p>
+        {% endif %}
+        <p>
+          <time>{{page.date | date: '%Y.%-d.%-m'}}</time>
+        </p>
+      </footer>
+    </div>
+  </div>
+</article>
+{% include footer.html %}
 </body>
 </html>

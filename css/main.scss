@@ -1,72 +1,19 @@
 ---
-
 ---
+@import 'reset';
 
-@import "reset";
-
-$header-height: 2.7rem;
-$footer-height: 5rem;
-
-/* post digests on frontpage */
-.post-digest {
-	margin: 32px 0px;
-	> h1, > h1 * {
-		color: darkblue;
-	}
-	> section * {
-		color: blue;
-		margin-bottom: 0px;
-	}
-	> a {
-		color: DodgerBlue;
-	}
+.align-left {
+  text-align: left;
 }
 
-body {
-	background: #ededed;
+.align-center {
+  text-align: center;
 }
 
-#logo-name {
-	border-right: 2.5px solid #505050;
+.align-right {
+  text-align: right;
 }
 
-.wrap {
-	min-height: 100% ;
-	height: auto !important;
-	margin: 0 auto -$footer-height;
-	overflow: auto;
+.inherit-padding {
+  padding: inherit;
 }
-
-.push, footer {
-		height: $footer-height;
-		margin-top: 0;
-}
-
-footer {
-	background: #ccc;
-	* {
-			line-height: inherit;
-	}
-}
-
-nav {
-	h1 {
-		display: inline;
-		vertical-align: middle;
-	}
-	ul {
-		vertical-align: middle;
-	}
-	// span.like-a {
-	// 	padding: 0.5em 1em;
-	// 	display: block;
-	// 	line-height: 1.7;
-	// }
-	#logo {
-		width: $header-height;
-		height: $header-height;
-		background-image: url("/img/avatar.svg");
-		background-size: 100% 100%;
-		background-color: black;
-	}
-}	

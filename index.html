@@ -1,31 +1,22 @@
 ---
-title: 垃圾堆
-description: 灵感填埋场
+title: buckle2000
 ---
 
 <!--[if lt IE 9 ]>
-<div class="ink-alert basic" role="alert">
-    <button class="ink-dismiss">&times;</button>
-    <p>
-        <strong>You are using an outdated Internet Explorer version.</strong>
-        Please <a href="http://browsehappy.com/">upgrade to a modern  browser</a> to improve your web experience.
-    </p>
-</div>
+
 <![endif]-->
 
-<section class="column-group gutters article">
-    <div class="xlarge-70 large-70 medium-60 small-100 tiny-100">
-        <h1>生活就像海洋，只有会划水的人才能到达彼岸。</h1>
-        <p>还没想好写啥。</p>
-    </div>
-    <section class="xlarge-30 large-30 medium-40 small-100 tiny-100">
-        {% for post in site.posts %}
-        <article class="post-digest">
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-            <p>
-                {{ post.excerpt }}
-            </p>
-        </article>
-        {% endfor %}
-    </section>
-</section>
+<div class="row">
+  <div class="small-12 medium-6 large-8 column">
+    
+  </div>
+  <div class="small-12 medium-6 large-4 column">
+    <h2>文章</h2>
+    {% for post in site.posts %}
+      <article>
+        <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+        <p>{{post.excerpt}}</p>
+      </article>
+    {% endfor %}
+  </div>
+</div>

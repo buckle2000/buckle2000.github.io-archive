@@ -1,0 +1,25 @@
+---
+items:
+  -
+    name: Alcohol
+    what: 文字游戏
+    url: /alcohol
+    img: /alcohol/800px-Ethanol-2D-flat.png
+  -
+    name: 微积分思维导图
+    what: 思维导图
+    url: /calculus
+    img: /calculus/derivative/Indefinite Integrals.png
+---
+
+<div class="row small-up-1 medium-up-2 large-up-3 small-8">
+{% for item in page.items %}
+  <div class="column">
+    <a href="{{item.url}}">
+      <img src="{{item.img}}" alt="图片" width="" height="">
+      <h3>{{item.name}}</h3>
+      <p>{{item.what}}</p>
+    </a>
+  </div>
+{% endfor %}
+</div>

@@ -1,12 +1,13 @@
-name: 垃圾堆
+# name: whatever
 
 # Where things are
 collections:
   posts:
-    output:   true
-  articles:
     output: true
-    permalink: /:collection/:path/
+    permalink: /post/:path
+  # articles:
+  #   output: true
+  #   permalink: /article/:path
 
 # Plugins
 # whitelist: []
@@ -14,7 +15,6 @@ collections:
 
 
 # Outputting
-permalink: /:path/:name
 defaults:
   -
     scope:
@@ -24,14 +24,21 @@ defaults:
   -
     scope:
       path: ""
-      type: "articles"
+      type: "posts"
     values:
       layout: post #TODO
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "articles"
+  #   values:
+  #     layout: article #TODO
 
 # Exclude these files from your production _site
 exclude:
   - ".gitignore"
   - "README.md"
+  - "*.sublime-*"
 
 sass:
     sass_dir: _sass
