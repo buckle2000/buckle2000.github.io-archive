@@ -1,0 +1,49 @@
+---
+title: 教育
+items:
+  -
+    name: Alcohol
+    what: 文字游戏
+    url: alcohol
+    img: alcohol/800px-Ethanol-2D-flat.png
+    date: 2016-12-26 11:20 +0800
+  -
+    name: 微积分思维流
+    what: 思维导图
+    url: calculus
+    img: calculus/derivative/Indefinite Integrals.png
+    date: 2017-5-23 9:48 +0800
+  -
+    name: 善意性别歧视
+    what: 坑
+    # url: 网址
+    img: holder.js/300x200
+    date: N/A
+  -
+    name: 阶级固化
+    what: 坑
+    # url: 网址
+    img: holder.js/300x200
+    date: N/A
+---
+<div class="row v-pad">
+  <div class="column">
+    <h1>“教育可以很有趣”</h1>
+  </div>
+</div>
+<div class="row small-up-1 medium-up-2 large-up-4" data-equalizer>
+{% for item in page.items %}
+  <div class="column">
+    <a{%if item.url %} href="{{item.url}}"{%endif%}>
+      <div data-equalizer-watch>
+        <img src="{{item.img}}" class="thumbnail" alt="图片" width="" height="">
+      </div>
+      <h3>{{item.name}}</h3>
+      <div class="clearfix">
+        <p class="float-left">{{item.what}}</p>
+        <p class="float-right">{{item.date | date: "%Y.%-m.%-d"}}</p>
+      </div>
+    </a>
+  </div>
+{% endfor %}
+</div>

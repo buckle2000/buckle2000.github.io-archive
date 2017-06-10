@@ -2,18 +2,22 @@
 ---
 @import 'reset';
 
-.align-left {
-  text-align: left;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
 .inherit-padding {
   padding: inherit;
+}
+
+.v-pad {
+  margin: 1.25rem auto;
+}
+
+.v-pad-s {
+  margin: 0.5rem auto;
+}
+
+.h-pad {
+  margin: auto 1.25rem;
+}
+
+.h-pad-s {
+  margin: auto 0.5rem;
 }

@@ -6,8 +6,8 @@
 <body>
 {% include header.html %}
 <!--<link rel="stylesheet" href="/css/post.css">-->
-<article>
-  <div class="row">
+<article class="v-pad">
+  <div class="row v-pad-s">
     <div class="column">
       <header>
         <h1>{{page.title}}</h1>
@@ -18,7 +18,7 @@
     <div class="medium-8 column">
 {{content}}
     </div>
-    <div class="medium-4 column align-right color-grey">
+    <div class="medium-4 column medium-text-right color-grey">
       <footer>
         {% if page.ps %}
         <p>{{page.ps}}</p>
