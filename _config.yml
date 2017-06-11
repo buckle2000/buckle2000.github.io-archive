@@ -5,9 +5,9 @@ collections:
   posts:
     output: true
     permalink: /post/:path
-  # articles:
-  #   output: true
-  #   permalink: /article/:path
+  articles:
+    output: true
+    permalink: /article/:path
 
 # Plugins
 # whitelist: []
@@ -27,13 +27,14 @@ defaults:
       type: posts
     values:
       layout: post
+      # tag: default
+  -
+    scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: post
       tag: default
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "articles"
-  #   values:
-  #     layout: article #TODO
 
 # Exclude these files from your production _site
 exclude:
