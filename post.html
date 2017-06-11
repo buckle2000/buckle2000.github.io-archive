@@ -1,0 +1,38 @@
+---
+permalink: /post/
+title: 文章
+---
+
+<div class="row v-pad">
+  <div class="column">
+    <h1>文章</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 medium-4 large-3 column">
+    <h2>技术</h2>
+    {% for post in site.posts %}
+      {% if post.tag contains "tech" %}
+        {% include post_index.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <hr class="show-for-small-only">
+  <div class="small-12 medium-4 large-3 column">
+    <h2>社会</h2>
+    {% for post in site.posts %}
+      {% if post.tag contains "social" %}
+        {% include post_index.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <hr class="show-for-small-only">
+  <div class="small-12 medium-4 large-3 column">
+    <h2>其他</h2>
+    {% for post in site.posts %}
+      {% if post.tag contains "default" %}
+        {% include post_index.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

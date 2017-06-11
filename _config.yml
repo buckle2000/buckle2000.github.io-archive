@@ -24,9 +24,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: post #TODO
+      layout: post
+      tag: default
   # -
   #   scope:
   #     path: ""
