@@ -2,6 +2,12 @@
 ---
 @import 'reset';
 
+$bg-color: #fefefe;
+
+body {
+  background-color: $bg-color;
+}
+
 .inherit-padding {
   padding: inherit;
 }
@@ -20,4 +26,65 @@
 
 .h-pad-s {
   margin: auto 0.5rem;
+}
+
+.no-margin {
+  margin: 0 0 !important;
+}
+
+.no-padding {
+  padding: 0 0 !important;
+}
+
+.text-normalize {
+  font-size: 1rem; 
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.accordion-title {
+  font-size: 1.25em;
+}
+
+.li-none {
+  list-style: none outside none;
+  margin-left: 0;
+}
+
+$c-avatar-color0: #000;
+$c-avatar-color1: #171717;
+$c-avatar-color2: #222;
+$c-avatar-color3: #333;
+
+.c-avatar {
+  .div1 {
+    background-color: $c-avatar-color1;
+  }
+  .div2 {
+    background-color: $c-avatar-color2;
+  }
+  .div1, .div2 {
+    width: .5rem;
+  }
+  background-color: $c-avatar-color3;
+  * {
+    background-color: $c-avatar-color3;
+  }
+  img {
+    background-color: $c-avatar-color0;    
+  }
+  li, img {
+    height: 3rem;
+  }
+  a {
+    color: white;
+  }
+  .hide-for-medium {
+    background-color: $c-avatar-color1;
+    // img {
+    //   box-shadow: 0px 0px 0px 2px $c-avatar-color1, 0px 0px 0px 4px $c-avatar-color2;
+    // }
+  }
 }

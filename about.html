@@ -1,4 +1,86 @@
 ---
 permalink: /about
-title: 关于
+title: 关于……
+items:
+  -
+    title: buckle2000
+    content: |
+      <div class="row">
+        <div class="medium-4 column">
+          <h3 class="text-normalize text-bolder">身份</h3>
+          <p>
+            <ul class="li-none">
+              <li>批评家</li>
+              <li>软件开发者 <a href="https://github.com/buckle2000/"><img src="//img.shields.io/github/followers/buckle2000.svg?style=social&label=Follow" alt="Follow on Github"></a></li>
+              <li>入门游戏开发者 <a href="https://buckle2000.itch.io/"><img src="//img.shields.io/badge/-itch.io-red.svg" alt="itch.io"></a></li>
+              <li>入门前端开发者</li>
+              <li>谜之作曲家 <a href="https://buckle2000.bandcamp.com/"><img src="//img.shields.io/badge/-bandcamp-639aa9.svg" alt="bandcamp"></a></li>
+              <li>行为艺术家？</li>
+            </ul>
+          </p>
+        </div>
+        <hr class="show-for-small-only">
+        <div class="medium-4 column">
+          <h3 class="text-normalize text-bolder">信仰</h3>
+          <p>
+            <ul class="li-none">
+              <li>自然界</li>
+              <li>市场经济</li>
+            </ul>
+          </p>
+        </div>
+        <hr class="show-for-small-only">
+        <div class="medium-4 column">
+          <h3 class="text-normalize text-bolder">性格</h3>
+          <p>你猜</p>
+        </div>
+      </div>      
+  -
+    title: 本网站
+    content: |
+      <div class="row">
+        <div class="medium-8 column">
+          <p>安逸地吸收着章鱼猫的能量，&lt;它&gt;的生命得以在战火纷飞的OSI模型顶端延续。简约的&lt;它&gt;庇护着许多HTML5的孤魂，以免它们居无住所。&lt;它&gt;毕生的梦想是摆脱所有依赖关系。</p>
+          <p>以上</p>
+        </div>
+        <hr class="show-for-small-only">
+        <div class="medium-3 column">
+          <h3 class="text-normalize">所使用技术</h3>
+          <ul class="li-none">
+            <li><a href="https://d3js.org/">D3.js</a></li>            
+            <li><a href="https://vuejs.org/">Vue.js</a></li>            
+            <li><a href="http://foundation.zurb.com/">Foundation</a></li>            
+            <li><a href="http://jekyllrb.com/">Jekyll</a></li>            
+            <li><a href="https://pages.github.com/">Github pages</a></li>            
+          </ul>
+        </div>
+        <a href="/secret" class="hide-for-small-only">
+          <div class="medium-1 column" style="height: 5rem"></div>
+        </a>
+      </div>
+  -
+    title: 联系方式
+    content: |
+      <table class="small callout no-margin">
+        <tr>
+          <td>电子邮件地址</td>
+          <td>moc (tod) ohoz (ta) 0002elkcub</td>
+        </tr>
+      </table>
 ---
+
+<div class="row">
+  <div class="column">
+    <h1>关于</h1>
+    <ul class="accordion" data-accordion>
+    {% for item in page.items %}
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title"><h2 class="text-normalize no-margin">{{item.title}}</h2></a>
+        <div class="accordion-content" data-tab-content>
+          {{item.content}}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
