@@ -7,3 +7,4 @@ package.json
 .sass-cache/
 .jekyll-metadata
 *.gem
+secret.html

@@ -79,12 +79,20 @@ $c-avatar-color3: #333;
     height: 3rem;
   }
   a {
+    transition: background-color .3s;
     color: white;
   }
+  a:hover {
+    background-color: #666;
+  }
+  // Medium screens
   .hide-for-medium {
     background-color: $c-avatar-color1;
-    // img {
-    //   box-shadow: 0px 0px 0px 2px $c-avatar-color1, 0px 0px 0px 4px $c-avatar-color2;
-    // }
   }
 }
+
+// @media only screen and (min-width: 40.063em) {
+//   .c-avatar {
+//     border-bottom: 5px groove $c-avatar-color0; 
+//   }
+// }
