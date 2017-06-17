@@ -1,0 +1,32 @@
+.inherit-padding {
+  padding: inherit;
+}
+
+.v-pad {
+  margin: 1.25rem auto;
+}
+
+.v-pad-s {
+  margin: 0.5rem auto;
+}
+
+.h-pad {
+  margin: auto 1.25rem;
+}
+
+.h-pad-s {
+  margin: auto 0.5rem;
+}
+
+.no-margin {
+  margin: 0 0 !important;
+}
+
+.no-padding {
+  padding: 0 0 !important;
+}
+
+.li-none {
+  list-style: none outside none;
+  margin-left: 0;
+}

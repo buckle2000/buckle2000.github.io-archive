@@ -1,98 +1,17 @@
 ---
 ---
 @import 'reset';
+@import 'generic';
+@import 'font';
+@import 'nav';
 
+$bg-color: #fefefe;
 $bg-color: #fefefe;
 
 body {
   background-color: $bg-color;
 }
 
-.inherit-padding {
-  padding: inherit;
-}
-
-.v-pad {
-  margin: 1.25rem auto;
-}
-
-.v-pad-s {
-  margin: 0.5rem auto;
-}
-
-.h-pad {
-  margin: auto 1.25rem;
-}
-
-.h-pad-s {
-  margin: auto 0.5rem;
-}
-
-.no-margin {
-  margin: 0 0 !important;
-}
-
-.no-padding {
-  padding: 0 0 !important;
-}
-
-.text-normalize {
-  font-size: 1rem; 
-}
-
-.text-bolder {
-  font-weight: bolder;
-}
-
 .accordion-title {
-  font-size: 1.25em;
+  font-size: 1rem;
 }
-
-.li-none {
-  list-style: none outside none;
-  margin-left: 0;
-}
-
-$c-avatar-color0: #000;
-$c-avatar-color1: #171717;
-$c-avatar-color2: #222;
-$c-avatar-color3: #333;
-
-.c-avatar {
-  .div1 {
-    background-color: $c-avatar-color1;
-  }
-  .div2 {
-    background-color: $c-avatar-color2;
-  }
-  .div1, .div2 {
-    width: .5rem;
-  }
-  background-color: $c-avatar-color3;
-  * {
-    background-color: $c-avatar-color3;
-  }
-  img {
-    background-color: $c-avatar-color0;    
-  }
-  li, img {
-    height: 3rem;
-  }
-  a {
-    transition: background-color .3s;
-    color: white;
-  }
-  a:hover {
-    background-color: #666;
-  }
-  // Medium screens
-  .hide-for-medium {
-    background-color: $c-avatar-color1;
-  }
-}
-
-// @media only screen and (min-width: 40.063em) {
-//   .c-avatar {
-//     border-bottom: 5px groove $c-avatar-color0; 
-//   }
-// }

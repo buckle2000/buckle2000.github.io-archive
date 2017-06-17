@@ -1,0 +1,38 @@
+
+$c-avatar-color0: #000;
+$c-avatar-color1: #171717;
+$c-avatar-color2: #222;
+$c-avatar-color3: #333;
+
+.c-avatar {
+  .div1 {
+    background-color: $c-avatar-color1;
+  }
+  .div2 {
+    background-color: $c-avatar-color2;
+  }
+  .div1, .div2 {
+    width: .5rem;
+  }
+  background-color: $c-avatar-color3;
+  * {
+    background-color: $c-avatar-color3;
+  }
+  img {
+    background-color: $c-avatar-color0;    
+  }
+  li, img {
+    height: 3rem;
+  }
+  a {
+    transition: background-color .3s;
+    color: white;
+  }
+  a:hover {
+    background-color: #666;
+  }
+  // Medium screens
+  .hide-for-medium {
+    background-color: $c-avatar-color1;
+  }
+}
