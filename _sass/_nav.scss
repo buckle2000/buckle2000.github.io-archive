@@ -31,8 +31,24 @@ $c-avatar-color3: #333;
   a:hover {
     background-color: #666;
   }
-  // Medium screens
-  .hide-for-medium {
-    background-color: $c-avatar-color1;
+
+  @media screen and (max-width: 39.9375em) {
+    .hide-for-medium {
+      text-align: center;
+      background-color: $c-avatar-color1;
+    }
+    .top-bar-left, .top-bar-right {
+      width: 100%;
+      text-align: center;
+      background-color: $c-avatar-color2;
+      ul {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      li {
+        background-color: $c-avatar-color2;
+      }
+    }
   }
 }
