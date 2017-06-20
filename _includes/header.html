@@ -1,24 +1,43 @@
 <nav class="top-bar no-padding c-avatar">
-  <div class="hide-for-medium text-center">
-    <a href="{%link index.html%}" class="no-padding">
+  <div class="hide-for-medium clearfix">
+    <a href="{%link index.html%}" class="no-padding float-left">
       <img src="/static/avatar.svg" alt="首页" class="no-margin">
-    </a>
+    </a>  
+    <button type="button" class="button no-margin float-right" data-toggle="off-canvas"><i class="fa fa-bars"></i></button>
   </div>
-  <div class="top-bar-left">
+  <div class="off-canvas position-right" id="off-canvas" data-off-canvas>
+    <ul class="vertical menu">
+      <li class="text-center">
+        <a data-close>
+          <i class="fa fa-chevron-right"></i>
+          <i class="fa fa-chevron-right"></i>
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      </li>
+      <li class="text-center"><a href="{%link about.html%}">关于</a></li>
+      <li class="text-center"><a href="{%link article.html%}">文章</a></li>
+      <li class="text-center"><a href="{%link edu/index.html%}">教育</a></li>
+      <li class="text-center"><a href="https://buckle2000.tumblr.com/">见闻</a></li>
+      <li class="text-center"><a href="https://buckle2000.itch.io/">游戏</a></li>
+      <li class="text-center"><a href="https://buckle2000.bandcamp.com/">音乐</a></li>
+    </ul>
+  </div>
+
+  <div class="top-bar-left show-for-medium">
     <ul class="menu">
-      <li class="show-for-medium">
+      <li>
         <a href="{%link index.html%}" class="no-padding">
           <img src="/static/avatar.svg" alt="首页" class="no-margin">
         </a>
       </li>
-      <li class="div1 show-for-medium"></li>
-      <li class="div2 show-for-medium"></li>
+      <li class="div1"></li>
+      <li class="div2"></li>
       <li><a href="{%link about.html%}">关于</a></li>
       <li><a href="{%link article.html%}">文章</a></li>
       <li><a href="{%link edu/index.html%}">教育</a></li>
     </ul>
   </div>
-  <div class="top-bar-right">
+  <div class="top-bar-right show-for-medium">
     <ul class="menu">
       <li><a href="https://buckle2000.tumblr.com/">见闻</a></li>
       <li><a href="https://buckle2000.itch.io/">游戏</a></li>
