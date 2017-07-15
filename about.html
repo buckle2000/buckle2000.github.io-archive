@@ -1,6 +1,6 @@
 ---
 permalink: /about
-title: 关于……
+title: 关于
 items:
   -
     title: buckle2000
@@ -68,24 +68,26 @@ items:
     content: |
       <table class="small callout no-margin">
         <tr>
-          <td>电子邮件地址</td>
+          <td>电子邮件地址 Email</td>
           <td>moc (tod) ohoz (ta) 0002elkcub</td>
+        </tr>
+        <tr>
+          <td>GPG Public Key</td>
+          <td><a href="/static/mygpg.key">下载 download</a></td>
         </tr>
       </table>
 ---
 
-<div class="row">
-  <div class="column">
-    <h1>关于</h1>
-    <ul class="accordion v-pad" data-accordion>
-    {% for item in page.items %}
-      <li class="accordion-item" data-accordion-item>
-        <a href="#" class="accordion-title">{{item.title}}</a>
-        <div class="accordion-content" data-tab-content>
-          {{item.content}}
-        </div>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
+<div class="row column">
+  <h1>关于</h1>
+  <ul class="accordion v-pad" data-accordion>
+  {% for item in page.items %}
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">{{item.title}}</a>
+      <div class="accordion-content" data-tab-content>
+        {{item.content}}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
 </div>

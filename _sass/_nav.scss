@@ -73,4 +73,11 @@ $nav-height: 3rem;
       background-color: $c-avatar-color1;
     }
   }
+
+  .li-highlight {
+    background-color: #666;
+    * {
+      background-color: unset;
+    }
+  }
 }
