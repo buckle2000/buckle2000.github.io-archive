@@ -28,3 +28,7 @@ body, h4, h5, h6 {
 .text-normalize {
   font-size: 1rem; 
 }
+
+.off-canvas *:not(i) {
+  font-family: $tk-serif;
+}

@@ -1,13 +1,13 @@
 name: buckle2000的个人网站
 
 # Where things are
-collections:
-  posts:
-    output: true
-    permalink: /post/:path
-  articles:
-    output: true
-    permalink: /article/:path
+# collections:
+#   posts:
+#     output: true
+#     permalink: /post/:path
+#   articles:
+#     output: true
+#     permalink: /article/:path
 
 # Plugins
 # whitelist: []
